@@ -10,6 +10,7 @@
 		5354F8BB25A16CEC0061F0FC /* DataStructurePackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5354F8B125A16CEC0061F0FC /* DataStructurePackage.framework */; };
 		5354F8CE25A16D600061F0FC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F8CD25A16D600061F0FC /* Stack.swift */; };
 		5354F8D225A16D6E0061F0FC /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F8D125A16D6E0061F0FC /* StackTest.swift */; };
+		5354F8D625A1858C0061F0FC /* ChallangeStackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F8D525A1858C0061F0FC /* ChallangeStackTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		5354F8C125A16CEC0061F0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5354F8CD25A16D600061F0FC /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		5354F8D125A16D6E0061F0FC /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
+		5354F8D525A1858C0061F0FC /* ChallangeStackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeStackTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				5354F8C125A16CEC0061F0FC /* Info.plist */,
 				5354F8D125A16D6E0061F0FC /* StackTest.swift */,
+				5354F8D525A1858C0061F0FC /* ChallangeStackTest.swift */,
 			);
 			path = DataStructurePackageTests;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5354F8D625A1858C0061F0FC /* ChallangeStackTest.swift in Sources */,
 				5354F8D225A16D6E0061F0FC /* StackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
