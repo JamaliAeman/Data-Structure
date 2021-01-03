@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5354F8BB25A16CEC0061F0FC /* DataStructurePackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5354F8B125A16CEC0061F0FC /* DataStructurePackage.framework */; };
+		5354F8CE25A16D600061F0FC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F8CD25A16D600061F0FC /* Stack.swift */; };
+		5354F8D225A16D6E0061F0FC /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F8D125A16D6E0061F0FC /* StackTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,8 @@
 		5354F8B525A16CEC0061F0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5354F8BA25A16CEC0061F0FC /* DataStructurePackageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructurePackageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5354F8C125A16CEC0061F0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5354F8CD25A16D600061F0FC /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		5354F8D125A16D6E0061F0FC /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				5354F8B525A16CEC0061F0FC /* Info.plist */,
+				5354F8CD25A16D600061F0FC /* Stack.swift */,
 			);
 			path = DataStructurePackage;
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5354F8C125A16CEC0061F0FC /* Info.plist */,
+				5354F8D125A16D6E0061F0FC /* StackTest.swift */,
 			);
 			path = DataStructurePackageTests;
 			sourceTree = "<group>";
@@ -140,9 +146,11 @@
 				TargetAttributes = {
 					5354F8B025A16CEC0061F0FC = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					5354F8B925A16CEC0061F0FC = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -187,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5354F8CE25A16D600061F0FC /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5354F8D225A16D6E0061F0FC /* StackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +342,7 @@
 		5354F8C625A16CEC0061F0FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -348,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aeman.DataStructurePackage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -355,6 +367,7 @@
 		5354F8C725A16CEC0061F0FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -378,6 +391,8 @@
 		5354F8C925A16CEC0061F0FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DataStructurePackageTests/Info.plist;
@@ -388,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aeman.DataStructurePackageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -395,6 +411,8 @@
 		5354F8CA25A16CEC0061F0FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DataStructurePackageTests/Info.plist;
