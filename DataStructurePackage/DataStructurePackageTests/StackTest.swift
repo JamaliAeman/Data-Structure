@@ -40,10 +40,16 @@ class StackTest: XCTestCase {
         XCTAssertEqual(stack, Stack(array))
     }
     
-    func test_stack_arrayLiteral() {
+    func test_create_stack_using_array() {
         let stack: Stack = ["Mango", "Avcado", "Apple"]
         
         XCTAssertEqual(stack, ["Mango", "Avcado", "Apple"])
+    }
+    
+    func test_stack_arrayLiteral() {
+        let stack: Stack = Stack(arrayLiteral: ["Mango", "Avcado", "Apple"])
+        
+        XCTAssertFalse(stack.isEmpty)
     }
 }
 
