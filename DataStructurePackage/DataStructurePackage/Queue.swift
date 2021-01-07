@@ -14,6 +14,13 @@ protocol Queue {
     var peek: Element? { get }
 }
 
+protocol BoardGameManager {
+    associatedtype Player
+    mutating func nextPlayer() -> Player?
+}
+
+
+
 // Implement queue using array example
 struct ArrayQueue<T>: Queue {
     private var storage:[T] = []
@@ -36,6 +43,18 @@ struct ArrayQueue<T>: Queue {
     }
 }
 
+extension ArrayQueue: BoardGameManager {
+    typealias Player = T
+    
+    mutating func nextPlayer() -> Player? {
+        guard let player = dequeue() else {
+            return nil
+        }
+        enqueue(player)
+        return player 
+    }
+}
+
 // Impelment Queue using Stacks
 struct StackQueue<T>: Queue {
     var enqueueArray:[T] = []
@@ -46,7 +65,7 @@ struct StackQueue<T>: Queue {
     }
     
     var peek: T? {
-        return !dequeueArray.isEmpty ? dequeueArray.last : enqueueArray.last
+        return !dequeueArray.isEmpty ? dequeueArray.last : enqueueArray.first
     }
     
     mutating func enqueue(_ element: T) {
@@ -60,5 +79,18 @@ struct StackQueue<T>: Queue {
             enqueueArray.removeAll()
         }
         return dequeueArray.popLast()
+    }
+}
+
+extension StackQueue: BoardGameManager {
+    typealias Player = T
+    
+    mutating func nextPlayer() -> Player? {
+        guard let player = dequeue() else {
+            return nil
+        }
+        
+        enqueue(player)
+        return player
     }
 }

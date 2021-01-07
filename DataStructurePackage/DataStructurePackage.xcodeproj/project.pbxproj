@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		531C10E325A6A34500AE10AA /* SortingAlgorithmsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C10E225A6A34500AE10AA /* SortingAlgorithmsTest.swift */; };
+		531C10E725A6C76900AE10AA /* SortedAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C10E625A6C76900AE10AA /* SortedAlgorithms.swift */; };
 		5354F8BB25A16CEC0061F0FC /* DataStructurePackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5354F8B125A16CEC0061F0FC /* DataStructurePackage.framework */; };
 		5354F8CE25A16D600061F0FC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F8CD25A16D600061F0FC /* Stack.swift */; };
 		5354F8D225A16D6E0061F0FC /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F8D125A16D6E0061F0FC /* StackTest.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		531C10E225A6A34500AE10AA /* SortingAlgorithmsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingAlgorithmsTest.swift; sourceTree = "<group>"; };
+		531C10E625A6C76900AE10AA /* SortedAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedAlgorithms.swift; sourceTree = "<group>"; };
 		5354F8B125A16CEC0061F0FC /* DataStructurePackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructurePackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5354F8B525A16CEC0061F0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5354F8BA25A16CEC0061F0FC /* DataStructurePackageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructurePackageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,7 @@
 				5354F8B525A16CEC0061F0FC /* Info.plist */,
 				5354F8CD25A16D600061F0FC /* Stack.swift */,
 				5354F91325A54F090061F0FC /* Queue.swift */,
+				531C10E625A6C76900AE10AA /* SortedAlgorithms.swift */,
 			);
 			path = DataStructurePackage;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 				5354F8D125A16D6E0061F0FC /* StackTest.swift */,
 				5354F8D525A1858C0061F0FC /* ChallangeStackTest.swift */,
 				5354F91725A550570061F0FC /* QueueTest.swift */,
+				531C10E225A6A34500AE10AA /* SortingAlgorithmsTest.swift */,
 			);
 			path = DataStructurePackageTests;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531C10E725A6C76900AE10AA /* SortedAlgorithms.swift in Sources */,
 				5354F8CE25A16D600061F0FC /* Stack.swift in Sources */,
 				5354F91425A54F090061F0FC /* Queue.swift in Sources */,
 			);
@@ -215,6 +222,7 @@
 			files = (
 				5354F8D625A1858C0061F0FC /* ChallangeStackTest.swift in Sources */,
 				5354F8D225A16D6E0061F0FC /* StackTest.swift in Sources */,
+				531C10E325A6A34500AE10AA /* SortingAlgorithmsTest.swift in Sources */,
 				5354F91825A550570061F0FC /* QueueTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
