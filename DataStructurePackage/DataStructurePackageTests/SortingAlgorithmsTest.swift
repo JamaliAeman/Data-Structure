@@ -21,8 +21,18 @@ class SortingAlgorithmsTest: XCTestCase {
         XCTAssertEqual(sortedArray, testArray)
     }
     
-    func test_bublle_sort_with_sortedArray() {
+    func test_buble_sort_with_sortedArray() {
         bubbleSort(&sortedArray)
+        XCTAssertEqual(sortedArray, sortedArray)
+    }
+    
+    func test_selection_sort() {
+        selectionSort(&testArray)
+        XCTAssertEqual(sortedArray, testArray)
+    }
+    
+    func test_selection_sort_with_sortedArray() {
+        selectionSort(&sortedArray)
         XCTAssertEqual(sortedArray, sortedArray)
     }
 }
